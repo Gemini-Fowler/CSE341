@@ -1,0 +1,53 @@
+### W02 Contacts API Tests
+
+### Get all contacts
+GET http://localhost:8080/contacts
+
+###
+
+### Get a single contact by ID
+### Replace with an actual contact _id from MongoDB
+GET http://localhost:8080/contacts/674a1234567890abcdef0001
+
+###
+
+### Create a new contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "favoriteColor": "green",
+  "birthday": "1992-08-22"
+}
+
+###
+
+### Update a contact
+### Replace the ID with an actual contact _id
+PUT http://localhost:8080/contacts/674a1234567890abcdef0001
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith-Updated",
+  "email": "jane.smith.updated@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1992-08-22"
+}
+
+###
+
+### Delete a contact
+### Replace the ID with an actual contact _id
+DELETE http://localhost:8080/contacts/674a1234567890abcdef0001
+
+###
+
+### Access Swagger API Documentation
+GET http://localhost:8080/api-docs
+
+###
+
